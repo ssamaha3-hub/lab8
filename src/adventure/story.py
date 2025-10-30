@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     console.print("You wake up in a dark forest. You can go left or right.", style="bold cyan")
     while True:
-        choice = Prompt.ask("Which direction do you choose?", choices=["left", "right", "exit"], default="exit")
+        choice = Prompt.ask("[bold]Which direction do you choose?[/bold]", choices=["left", "right", "exit"], default="exit")
         choice = choice.strip().lower()
         if choice == 'exit':
             break
